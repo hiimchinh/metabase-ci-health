@@ -1,0 +1,12 @@
+{
+  "name": "metabase-ci-health",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CI health report for metabase/metabase from public GitHub Actions data",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "report": "node src/cli.ts"
+  }
+}
