@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: 22
       - run: node --test test/*.test.ts
-      # The Actions token allows 1,000 API requests per hour. A full week needs more, so the client
-      # waits for the hourly reset when it runs out (hence the 180-minute timeout); fewer lookups keep that to one or two waits.
-      - run: node src/cli.ts --days 7 --max-job-lookups 150 --timing-samples 10
+      # Measured 04/11/2026: a full week takes about 2,000 API requests and 10 minutes. If the token's
+      # hourly limit runs out, the client waits for the reset; the 180-minute timeout leaves room for that.
+      - run: node src/cli.ts --days 7
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Commit the new report
