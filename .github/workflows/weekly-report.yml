@@ -1,0 +1,32 @@
+name: weekly-report
+on:
+  schedule:
+    - cron: "0 2 * * 1" # Monday 02:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: weekly-report
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test test/*.test.ts
+      # The Actions token allows 1,000 API requests per hour. A full week needs more, so the client
+      # waits for the hourly reset when it runs out (hence the 180-minute timeout); fewer lookups keep that to one or two waits.
+      - run: node src/cli.ts --days 7 --max-job-lookups 150 --timing-samples 10
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit the new report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports
+          git diff --cached --quiet || git commit -m "chore: weekly CI health report"
+          git push
