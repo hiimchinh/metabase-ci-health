@@ -2,7 +2,7 @@
   "repo": "metabase/metabase",
   "from": "2026-10-28",
   "to": "2026-11-03",
-  "generatedAt": "2026-11-04T15:22:47.087Z",
+  "generatedAt": "2026-11-04T15:33:42.615Z",
   "totalRuns": 49662,
   "summaries": [
     {
@@ -20,6 +20,13 @@
       "cancelled": 0
     },
     {
+      "name": "Run tests",
+      "path": ".github/workflows/run-tests.yml",
+      "runs": 2365,
+      "failures": 690,
+      "cancelled": 612
+    },
+    {
       "name": "Mage Tests",
       "path": ".github/workflows/mage.yml",
       "runs": 1997,
@@ -27,39 +34,18 @@
       "cancelled": 2
     },
     {
+      "name": "Lint",
+      "path": ".github/workflows/lint.yml",
+      "runs": 2322,
+      "failures": 78,
+      "cancelled": 397
+    },
+    {
       "name": "OpenAPI Check",
       "path": ".github/workflows/openapi-check.yml",
       "runs": 2755,
       "failures": 3,
       "cancelled": 40
-    },
-    {
-      "name": "E2E Stress Test (flaky-test-fix PR)",
-      "path": ".github/workflows/e2e-stress-test-flaky-pr.yml",
-      "runs": 2591,
-      "failures": 3,
-      "cancelled": 82
-    },
-    {
-      "name": "Deploy PR Environment",
-      "path": ".github/workflows/env.create.yml",
-      "runs": 2680,
-      "failures": 7,
-      "cancelled": 205
-    },
-    {
-      "name": "Chromatic Storybook deployment",
-      "path": ".github/workflows/chromatic.yml",
-      "runs": 2433,
-      "failures": 2,
-      "cancelled": 278
-    },
-    {
-      "name": "Release Code Tests",
-      "path": ".github/workflows/release-tests.yml",
-      "runs": 2430,
-      "failures": 5,
-      "cancelled": 176
     },
     {
       "name": "Check doc links",
@@ -76,18 +62,25 @@
       "cancelled": 146
     },
     {
+      "name": "Release Code Tests",
+      "path": ".github/workflows/release-tests.yml",
+      "runs": 2430,
+      "failures": 5,
+      "cancelled": 176
+    },
+    {
+      "name": "Chromatic Storybook deployment",
+      "path": ".github/workflows/chromatic.yml",
+      "runs": 2433,
+      "failures": 2,
+      "cancelled": 278
+    },
+    {
       "name": "CLJS",
       "path": ".github/workflows/cljs.yml",
       "runs": 2366,
       "failures": 6,
       "cancelled": 161
-    },
-    {
-      "name": "Lint migrations",
-      "path": ".github/workflows/migrations.yml",
-      "runs": 3033,
-      "failures": 5,
-      "cancelled": 1
     },
     {
       "name": "PR Checks",
@@ -97,18 +90,25 @@
       "cancelled": 1
     },
     {
-      "name": "Lint",
-      "path": ".github/workflows/lint.yml",
-      "runs": 2322,
-      "failures": 78,
-      "cancelled": 397
+      "name": "E2E Stress Test (flaky-test-fix PR)",
+      "path": ".github/workflows/e2e-stress-test-flaky-pr.yml",
+      "runs": 2591,
+      "failures": 3,
+      "cancelled": 82
     },
     {
-      "name": "Run tests",
-      "path": ".github/workflows/run-tests.yml",
-      "runs": 2365,
-      "failures": 690,
-      "cancelled": 612
+      "name": "Deploy PR Environment",
+      "path": ".github/workflows/env.create.yml",
+      "runs": 2680,
+      "failures": 7,
+      "cancelled": 205
+    },
+    {
+      "name": "Lint migrations",
+      "path": ".github/workflows/migrations.yml",
+      "runs": 3033,
+      "failures": 5,
+      "cancelled": 1
     },
     {
       "name": "Notify On Re-run Limit",
@@ -116,20 +116,6 @@
       "runs": 3053,
       "failures": 0,
       "cancelled": 0
-    },
-    {
-      "name": "Embedding SDK Labels Reminder",
-      "path": ".github/workflows/embedding-sdk-labels-reminder.yml",
-      "runs": 1615,
-      "failures": 30,
-      "cancelled": 4
-    },
-    {
-      "name": "Perf test command",
-      "path": ".github/workflows/perf-test-labeled.yml",
-      "runs": 679,
-      "failures": 0,
-      "cancelled": 8
     },
     {
       "name": "Auto-Optimize Docs PNG Images",
@@ -158,6 +144,20 @@
       "runs": 1124,
       "failures": 5,
       "cancelled": 0
+    },
+    {
+      "name": "Perf test command",
+      "path": ".github/workflows/perf-test-labeled.yml",
+      "runs": 679,
+      "failures": 0,
+      "cancelled": 8
+    },
+    {
+      "name": "Embedding SDK Labels Reminder",
+      "path": ".github/workflows/embedding-sdk-labels-reminder.yml",
+      "runs": 1615,
+      "failures": 30,
+      "cancelled": 4
     },
     {
       "name": "Auto assign pull requests",
@@ -286,15 +286,15 @@
       "cancelled": 0
     },
     {
-      "name": "Bundle Load Stats",
-      "path": ".github/workflows/test.bundle-load-stats.yml",
+      "name": "Bundle Size Stats",
+      "path": ".github/workflows/bundle-size-stats.yml",
       "runs": 299,
       "failures": 0,
       "cancelled": 0
     },
     {
-      "name": "Bundle Size Stats",
-      "path": ".github/workflows/bundle-size-stats.yml",
+      "name": "Bundle Load Stats",
+      "path": ".github/workflows/test.bundle-load-stats.yml",
       "runs": 299,
       "failures": 0,
       "cancelled": 0
@@ -391,6 +391,13 @@
       "cancelled": 0
     },
     {
+      "name": "PR-Env labeled",
+      "path": ".github/workflows/pr-env-labeled.yml",
+      "runs": 16,
+      "failures": 0,
+      "cancelled": 2
+    },
+    {
       "name": "Uberjar Containerize labeled",
       "path": ".github/workflows/uberjar-containerize-labeled.yml",
       "runs": 54,
@@ -412,23 +419,16 @@
       "cancelled": 12
     },
     {
-      "name": "PR-Env labeled",
-      "path": ".github/workflows/pr-env-labeled.yml",
-      "runs": 16,
+      "name": "i18n",
+      "path": ".github/workflows/i18n.yml",
+      "runs": 45,
       "failures": 0,
-      "cancelled": 2
+      "cancelled": 4
     },
     {
       "name": "Loki Visual Regression Testing",
       "path": ".github/workflows/loki.yml",
       "runs": 38,
-      "failures": 0,
-      "cancelled": 0
-    },
-    {
-      "name": "CodeQL",
-      "path": ".github/workflows/codeql.yml",
-      "runs": 45,
       "failures": 0,
       "cancelled": 0
     },
@@ -440,9 +440,9 @@
       "cancelled": 0
     },
     {
-      "name": "Block Master Branch PRs",
-      "path": ".github/workflows/block-master-source-branch-prs.yml",
-      "runs": 38,
+      "name": "CodeQL",
+      "path": ".github/workflows/codeql.yml",
+      "runs": 45,
       "failures": 0,
       "cancelled": 0
     },
@@ -468,6 +468,13 @@
       "cancelled": 0
     },
     {
+      "name": "Block Master Branch PRs",
+      "path": ".github/workflows/block-master-source-branch-prs.yml",
+      "runs": 38,
+      "failures": 0,
+      "cancelled": 0
+    },
+    {
       "name": "Prevent backport.sh from being merged",
       "path": ".github/workflows/check-backport-script.yml",
       "runs": 38,
@@ -480,13 +487,6 @@
       "runs": 45,
       "failures": 0,
       "cancelled": 0
-    },
-    {
-      "name": "i18n",
-      "path": ".github/workflows/i18n.yml",
-      "runs": 45,
-      "failures": 0,
-      "cancelled": 4
     },
     {
       "name": "Module Boundaries Stats",
@@ -582,94 +582,94 @@
   ],
   "timings": {
     ".github/workflows/migrations.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 0.6,
       "p95Minutes": 0.7,
       "p95QueueMinutes": 0.1
     },
     ".github/workflows/docs-links.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 1.1,
       "p95Minutes": 1.8,
       "p95QueueMinutes": 0.1
     },
     ".github/workflows/pr.checks.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 0.2,
-      "p95Minutes": 0.3,
-      "p95QueueMinutes": 0.2
+      "p95Minutes": 0.2,
+      "p95QueueMinutes": 0.3
     },
     ".github/workflows/mage.yml": {
-      "samples": 20,
-      "p50Minutes": 4.4,
+      "samples": 10,
+      "p50Minutes": 4.3,
       "p95Minutes": 6.5,
       "p95QueueMinutes": 0.1
     },
     ".github/workflows/chromatic.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 0.4,
-      "p95Minutes": 0.6,
+      "p95Minutes": 0.5,
       "p95QueueMinutes": 0.2
     },
     ".github/workflows/cljs.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 0.4,
-      "p95Minutes": 0.6,
+      "p95Minutes": 2.5,
       "p95QueueMinutes": 0.1
     },
     ".github/workflows/serialization.yml": {
-      "samples": 20,
-      "p50Minutes": 0.5,
-      "p95Minutes": 0.9,
-      "p95QueueMinutes": 0.4
+      "samples": 10,
+      "p50Minutes": 0.4,
+      "p95Minutes": 0.5,
+      "p95QueueMinutes": 0.9
     },
     ".github/workflows/lint.yml": {
-      "samples": 20,
-      "p50Minutes": 9.6,
+      "samples": 10,
+      "p50Minutes": 9.7,
       "p95Minutes": 11.2,
       "p95QueueMinutes": 1.1
     },
     ".github/workflows/run-tests.yml": {
-      "samples": 20,
-      "p50Minutes": 34.6,
-      "p95Minutes": 46.4,
-      "p95QueueMinutes": 0.1
-    },
-    ".github/workflows/check-preresolve-aliases.yml": {
-      "samples": 20,
-      "p50Minutes": 0.6,
-      "p95Minutes": 1.8,
+      "samples": 10,
+      "p50Minutes": 7.4,
+      "p95Minutes": 48,
       "p95QueueMinutes": 0.2
     },
+    ".github/workflows/check-preresolve-aliases.yml": {
+      "samples": 10,
+      "p50Minutes": 0.8,
+      "p95Minutes": 1.9,
+      "p95QueueMinutes": 0.3
+    },
     ".github/workflows/build-scripts.yml": {
-      "samples": 20,
-      "p50Minutes": 1.1,
-      "p95Minutes": 3.3,
+      "samples": 10,
+      "p50Minutes": 1.3,
+      "p95Minutes": 4.2,
       "p95QueueMinutes": 0.1
     },
     ".github/workflows/cross-branch-migrations.yml": {
-      "samples": 20,
-      "p50Minutes": 11.1,
-      "p95Minutes": 14.7,
+      "samples": 10,
+      "p50Minutes": 12.4,
+      "p95Minutes": 15,
       "p95QueueMinutes": 1.5
     },
     ".github/workflows/minimal-tests.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 0.2,
-      "p95Minutes": 0.2,
-      "p95QueueMinutes": 0.1
+      "p95Minutes": 0.4,
+      "p95QueueMinutes": 0.2
     },
     ".github/workflows/linear-pr-links.yml": {
-      "samples": 20,
+      "samples": 10,
       "p50Minutes": 0.3,
       "p95Minutes": 0.3,
       "p95QueueMinutes": 0.1
     },
     ".github/workflows/loki.yml": {
-      "samples": 20,
-      "p50Minutes": 0.3,
+      "samples": 10,
+      "p50Minutes": 0.2,
       "p95Minutes": 0.4,
-      "p95QueueMinutes": 0.2
+      "p95QueueMinutes": 0.1
     }
   },
   "flips": [
@@ -719,14 +719,6 @@
       "head_sha": "d69277c8641deb73a050797ee0190454288ccaa5",
       "failedRunId": 40893652955,
       "failedAttempt": 2,
-      "confirmed": false
-    },
-    {
-      "workflow": "Lint",
-      "path": ".github/workflows/lint.yml",
-      "head_sha": "48d055ccb1876fb5236cd2df5a464dd5bb3fd03a",
-      "failedRunId": 40918198379,
-      "failedAttempt": 1,
       "confirmed": false
     },
     {
@@ -3604,553 +3596,161 @@
   ],
   "flakyJobs": [
     {
-      "job": "loki-tests / visual-test",
-      "flips": 35,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
       "job": "loki-tests / loki-run",
-      "flips": 34,
+      "flips": 18,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "app-db-tests / MariaDB Latest EE App DB Tests (Part 2)",
-      "flips": 14,
+      "job": "loki-tests / visual-test",
+      "flips": 18,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "app-db-tests / MySQL 9 EE App DB Tests (Part 2)",
-      "flips": 14,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-25-ee / e2e-tests-e2e-group-25-ee",
-      "flips": 14,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-34-ee / e2e-tests-e2e-group-34-ee",
-      "flips": 14,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / oss-subset-oss / e2e-tests-oss-subset-oss",
-      "flips": 14,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / Postgres Latest EE App DB Tests (Part 2)",
-      "flips": 13,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-03-ee / e2e-tests-e2e-group-03-ee",
-      "flips": 13,
+      "flips": 8,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "e2e-tests / e2e-group-24-ee / e2e-tests-e2e-group-24-ee",
-      "flips": 13,
+      "flips": 8,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-30-ee / e2e-tests-e2e-group-30-ee",
-      "flips": 12,
+      "job": "e2e-tests / e2e-group-25-ee / e2e-tests-e2e-group-25-ee",
+      "flips": 8,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "e2e-tests / e2e-group-32-ee / e2e-tests-e2e-group-32-ee",
-      "flips": 12,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / Postgres 14.x EE App DB Tests (Part 3)",
-      "flips": 11,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-18-ee / e2e-tests-e2e-group-18-ee",
-      "flips": 11,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / BigQuery Driver Tests 1",
-      "flips": 10,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-02-ee / e2e-tests-e2e-group-02-ee",
-      "flips": 10,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-10-ee / e2e-tests-e2e-group-10-ee",
-      "flips": 9,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-22-ee / e2e-tests-e2e-group-22-ee",
-      "flips": 9,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-29-ee / e2e-tests-e2e-group-29-ee",
-      "flips": 9,
+      "flips": 8,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "lint",
-      "flips": 9,
+      "flips": 8,
       "workflows": [
         "Lint"
       ]
     },
     {
+      "job": "app-db-tests / Postgres Latest EE App DB Tests (Part 2)",
+      "flips": 7,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-34-ee / e2e-tests-e2e-group-34-ee",
+      "flips": 7,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / oss-subset-oss / e2e-tests-oss-subset-oss",
+      "flips": 7,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
       "job": "app-db-tests / MySQL 8 EE App DB Tests (Part 2)",
-      "flips": 8,
+      "flips": 6,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "app-db-tests / Postgres 14.x EE App DB Tests (Part 2)",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / Postgres Latest EE App DB Tests (Part 3)",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "backend-tests / Java 25 OSS App DB Tests (Part 1)",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-07-ee / e2e-tests-e2e-group-07-ee",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-09-ee / e2e-tests-e2e-group-09-ee",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-16-ee / e2e-tests-e2e-group-16-ee",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-26-ee / e2e-tests-e2e-group-26-ee",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-33-ee / e2e-tests-e2e-group-33-ee",
-      "flips": 8,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MariaDB 10.6 EE App DB Tests (Part 2)",
-      "flips": 7,
+      "flips": 5,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "app-db-tests / Postgres Latest Enterprise Tests",
-      "flips": 7,
+      "flips": 5,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "backend-tests / Java 25 EE App DB Tests (Part 2)",
-      "flips": 7,
+      "job": "e2e-tests / e2e-group-10-ee / e2e-tests-e2e-group-10-ee",
+      "flips": 5,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-05-ee / e2e-tests-e2e-group-05-ee",
-      "flips": 7,
+      "job": "app-db-tests / Postgres 14.x EE App DB Tests (Part 3)",
+      "flips": 4,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-12-ee / e2e-tests-e2e-group-12-ee",
-      "flips": 7,
+      "job": "app-db-tests / Postgres Latest EE App DB Tests (Part 3)",
+      "flips": 4,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-13-ee / e2e-tests-e2e-group-13-ee",
-      "flips": 7,
+      "job": "e2e-tests / e2e-group-30-ee / e2e-tests-e2e-group-30-ee",
+      "flips": 4,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-14-ee / e2e-tests-e2e-group-14-ee",
-      "flips": 7,
+      "job": "app-db-tests / MariaDB 10.6 EE App DB Tests (Part 2)",
+      "flips": 3,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-20-ee / e2e-tests-e2e-group-20-ee",
-      "flips": 7,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-23-ee / e2e-tests-e2e-group-23-ee",
-      "flips": 7,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "backend-tests / Java 25 OSS App DB Tests (Part 2)",
-      "flips": 6,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / SQL Server 2022 Driver Tests",
-      "flips": 6,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-15-ee / e2e-tests-e2e-group-15-ee",
-      "flips": 6,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-27-ee / e2e-tests-e2e-group-27-ee",
-      "flips": 6,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / mongo-ee / e2e-tests-mongo-ee",
-      "flips": 6,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "frontend-tests / fe-tests-unit (1)",
-      "flips": 6,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-shoppy-e2e-tests-development-bundle",
-      "flips": 6,
+      "job": "app-db-tests / MariaDB Latest EE App DB Tests (Part 2)",
+      "flips": 3,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "app-db-tests / MariaDB Latest Enterprise Tests",
-      "flips": 5,
+      "flips": 3,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "backend-tests / Java 25 EE App DB Tests (Part 2)",
+      "flips": 3,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / BigQuery Driver Tests 1",
+      "flips": 3,
       "workflows": [
         "Run tests"
       ]
     },
     {
       "job": "driver-tests / Postgres 14.x Transforms Python Tests",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Spark SQL",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-01-ee / e2e-tests-e2e-group-01-ee",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-06-ee / e2e-tests-e2e-group-06-ee",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-11-ee / e2e-tests-e2e-group-11-ee",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-19-ee / e2e-tests-e2e-group-19-ee",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-28-ee / e2e-tests-e2e-group-28-ee",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK component tests / SDK component tests (React 19)",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-metabase-nextjs-sdk-embedding-sample-e2e-tests-production-bundle",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-metabase-nodejs-react-sdk-embedding-sample-e2e-tests-development-bundle",
-      "flips": 5,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MySQL 9 Enterprise Tests",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "backend-tests / Java 25 EE App DB Tests (Part 1)",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "backend-tests / Java 25 Enterprise Tests",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "build-scripts-tests / test-embedder-plugin",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Athena Driver Tests 0",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Postgres 14.x Driver Tests Part 1",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Presto",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Redshift OSS (Excluding Upload Tests) Part 1",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-04-ee / e2e-tests-e2e-group-04-ee",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-08-ee / e2e-tests-e2e-group-08-ee",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-21-ee / e2e-tests-e2e-group-21-ee",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / e2e-group-31-ee / e2e-tests-e2e-group-31-ee",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "e2e-tests / python-ee / e2e-tests-python-ee",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK component tests / SDK component tests (Backward compatibility)",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-shoppy-e2e-tests-production-bundle",
-      "flips": 4,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MariaDB 10.6 EE App DB Tests (Part 3)",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MariaDB Latest EE App DB Tests (Part 3)",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MySQL 9 EE App DB Tests (Part 3)",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / Postgres 14.x Enterprise Tests",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / H2 (OSS)",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / MySQL 8 Driver Tests",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Redshift EE (Excluding Upload Tests) Part 1",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Redshift OSS (Excluding Upload Tests) Part 2",
       "flips": 3,
       "workflows": [
         "Run tests"
@@ -4164,70 +3764,63 @@
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-17-ee / e2e-tests-e2e-group-17-ee",
+      "job": "driver-tests / SQL Server 2022 Driver Tests",
       "flips": 3,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-35-ee / e2e-tests-e2e-group-35-ee",
+      "job": "e2e-tests / e2e-group-03-ee / e2e-tests-e2e-group-03-ee",
       "flips": 3,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-vite-6-data-app-host-app-e2e-tests-production-bundle",
+      "job": "e2e-tests / e2e-group-07-ee / e2e-tests-e2e-group-07-ee",
       "flips": 3,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-vite-6-host-app-e2e-tests-development-bundle",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-metabase-nextjs-sdk-embedding-sample-e2e-tests-development-bundle",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-metabase-nodejs-react-sdk-embedding-sample-e2e-tests-production-bundle",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-shoppy-synthetic-monitoring-tests",
-      "flips": 3,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MariaDB 10.6 Enterprise Tests",
+      "job": "app-db-tests / MariaDB 10.6 EE App DB Tests (Part 3)",
       "flips": 2,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "driver-tests / Athena",
+      "job": "app-db-tests / MySQL 9 Enterprise Tests",
       "flips": 2,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "driver-tests / Postgres Latest Driver Tests Part 2",
+      "job": "backend-tests / Java 25 Enterprise Tests",
+      "flips": 2,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "backend-tests / Java 25 OSS App DB Tests (Part 1)",
+      "flips": 2,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / H2 (OSS)",
+      "flips": 2,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / Postgres 14.x Driver Tests Part 1",
       "flips": 2,
       "workflows": [
         "Run tests"
@@ -4241,14 +3834,35 @@
       ]
     },
     {
-      "job": "driver-tests / Redshift Transforms Python Tests",
+      "job": "driver-tests / Presto",
       "flips": 2,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "driver-tests / Snowflake Driver Tests",
+      "job": "e2e-tests / e2e-group-09-ee / e2e-tests-e2e-group-09-ee",
+      "flips": 2,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-15-ee / e2e-tests-e2e-group-15-ee",
+      "flips": 2,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-16-ee / e2e-tests-e2e-group-16-ee",
+      "flips": 2,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-18-ee / e2e-tests-e2e-group-18-ee",
       "flips": 2,
       "workflows": [
         "Run tests"
@@ -4269,14 +3883,7 @@
       ]
     },
     {
-      "job": "e2e-tests / Generate E2E snapshots",
-      "flips": 2,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "frontend-tests / fe-tests-unit (2)",
+      "job": "frontend-tests / fe-tests-unit (1)",
       "flips": 2,
       "workflows": [
         "Run tests"
@@ -4332,35 +3939,7 @@
       ]
     },
     {
-      "job": "sdk-tests / SDK component tests / SDK component tests (React 18)",
-      "flips": 2,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-angular-20-host-app-e2e-tests-production-bundle",
-      "flips": 2,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-next-15-app-router-host-app-e2e-tests-development-bundle",
-      "flips": 2,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-vite-6-data-app-host-app-e2e-tests-development-bundle",
-      "flips": 2,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "semantic-search-tests / H2 with pgvector pg17 Semantic Search Tests",
+      "job": "sdk-tests / SDK component tests / SDK component tests (Backward compatibility)",
       "flips": 2,
       "workflows": [
         "Run tests"
@@ -4374,20 +3953,6 @@
       ]
     },
     {
-      "job": "app-db-tests / MySQL 8 EE App DB Tests (Part 3)",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "app-db-tests / MySQL 8 Enterprise Tests",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
       "job": "app-db-tests / Postgres 14.x EE App DB Tests (Part 1)",
       "flips": 1,
       "workflows": [
@@ -4395,7 +3960,28 @@
       ]
     },
     {
-      "job": "bundle-size / Bundle size check",
+      "job": "app-db-tests / Postgres 14.x Enterprise Tests",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "backend-tests / Java 25 EE App DB Tests (Part 1)",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "backend-tests / Java 25 OSS App DB Tests (Part 2)",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "build-scripts-tests / test-embedder-plugin",
       "flips": 1,
       "workflows": [
         "Run tests"
@@ -4430,6 +4016,13 @@
       ]
     },
     {
+      "job": "driver-tests / Athena Driver Tests 0",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
       "job": "driver-tests / Athena Driver Tests 1",
       "flips": 1,
       "workflows": [
@@ -4437,28 +4030,7 @@
       ]
     },
     {
-      "job": "driver-tests / BigQuery Driver Tests 0",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / Databricks (Driver Tests Part 1, :only-tags [:mb/driver-tests] :exclude-tags [:mb/transforms-pyth...",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
       "job": "driver-tests / H2",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "driver-tests / MariaDB 10.6 Driver Tests",
       "flips": 1,
       "workflows": [
         "Run tests"
@@ -4486,13 +4058,6 @@
       ]
     },
     {
-      "job": "driver-tests / MongoDB 6.0 Transforms Python Tests",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
       "job": "driver-tests / MongoDB Latest Driver Tests",
       "flips": 1,
       "workflows": [
@@ -4507,7 +4072,133 @@
       ]
     },
     {
+      "job": "driver-tests / MySQL 8 Driver Tests",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / Redshift OSS (Excluding Upload Tests) Part 1",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / Redshift OSS (Excluding Upload Tests) Part 2",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / Redshift Transforms Python Tests",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / Snowflake Driver Tests",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
       "job": "driver-tests / Snowflake Transforms Python Tests",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "driver-tests / Spark SQL",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-01-ee / e2e-tests-e2e-group-01-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-02-ee / e2e-tests-e2e-group-02-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-04-ee / e2e-tests-e2e-group-04-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-05-ee / e2e-tests-e2e-group-05-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-08-ee / e2e-tests-e2e-group-08-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-11-ee / e2e-tests-e2e-group-11-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-12-ee / e2e-tests-e2e-group-12-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-14-ee / e2e-tests-e2e-group-14-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-20-ee / e2e-tests-e2e-group-20-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-22-ee / e2e-tests-e2e-group-22-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-23-ee / e2e-tests-e2e-group-23-ee",
+      "flips": 1,
+      "workflows": [
+        "Run tests"
+      ]
+    },
+    {
+      "job": "e2e-tests / e2e-group-28-ee / e2e-tests-e2e-group-28-ee",
       "flips": 1,
       "workflows": [
         "Run tests"
@@ -4521,56 +4212,35 @@
       ]
     },
     {
-      "job": "e2e-tests / e2e-group-40-ee / e2e-tests-e2e-group-40-ee",
+      "job": "frontend-tests / fe-tests-unit (2)",
       "flips": 1,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "frontend-tests / fe-tests-ci-scripts",
+      "job": "sdk-tests / SDK component tests / SDK component tests (React 19)",
       "flips": 1,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "loki-tests / gate / Decide whether to run",
+      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-vite-6-data-app-host-app-e2e-tests-production-bundle",
       "flips": 1,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-angular-20-host-app-e2e-tests-development-bundle",
+      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-sample-app-shoppy-e2e-tests-development-bundle",
       "flips": 1,
       "workflows": [
         "Run tests"
       ]
     },
     {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-next-15-app-router-host-app-e2e-tests-production-bundle",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-next-15-pages-router-host-app-e2e-tests-development-bundle",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-next-15-pages-router-host-app-e2e-tests-production-bundle",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-host-app-vite-6-host-app-e2e-tests-production-bundle",
+      "job": "sdk-tests / SDK e2e tests for compatibility with (host/sample) apps / e2e-shoppy-synthetic-monitoring-tests",
       "flips": 1,
       "workflows": [
         "Run tests"
@@ -4596,21 +4266,7 @@
       "workflows": [
         "CLJS"
       ]
-    },
-    {
-      "job": "uberjar / build (ee)",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
-    },
-    {
-      "job": "uberjar / build (oss)",
-      "flips": 1,
-      "workflows": [
-        "Run tests"
-      ]
     }
   ],
-  "jobLookups": 300
+  "jobLookups": 150
 }
